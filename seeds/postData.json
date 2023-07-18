@@ -1,0 +1,50 @@
+[
+	{
+	  "id": 1,
+	  "title": "Exploring the World of Technology",
+	  "content": "Join us on a thrilling journey through the latest advancements in technology!",
+	  "date_created": "2023-07-15T12:34:56Z",
+	  "user_id": 1,
+	  "user": {
+		"id": 1,
+		"name": "John Doe",
+		"email": "john@example.com"
+	  }
+	},
+	{
+	  "id": 2,
+	  "title": "Unleashing the Power of Artificial Intelligence",
+	  "content": "Discover how AI is transforming industries and shaping our future.",
+	  "date_created": "2023-07-16T10:20:30Z",
+	  "user_id": 1,
+	  "user": {
+		"id": 1,
+		"name": "John Doe",
+		"email": "john@example.com"
+	  }
+	},
+	{
+	  "id": 3,
+	  "title": "The Rise of Cybersecurity",
+	  "content": "Explore the ever-evolving world of cybersecurity and the challenges we face.",
+	  "date_created": "2023-07-17T08:15:45Z",
+	  "user_id": 2,
+	  "user": {
+		"id": 2,
+		"name": "Jane Smith",
+		"email": "jane@example.com"
+	  }
+	},
+	{
+	  "id": 4,
+	  "title": "Embracing the Internet of Things",
+	  "content": "Uncover the potential of IoT and its impact on our daily lives.",
+	  "date_created": "2023-07-18T16:45:10Z",
+	  "user_id": 3,
+	  "user": {
+		"id": 3,
+		"name": "Michael Johnson",
+		"email": "michael@example.com"
+	  }
+	}
+  ]

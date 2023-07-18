@@ -1,0 +1,18 @@
+{{> post-details}}
+
+<section>
+  <div class="card">
+    <div class="card-header">
+      <h2>Update Post</h2>
+    </div>
+    <div class="card-content">
+      <form class="update-post-form">
+        <input type="text" name="title" id="post-title" value="{{title}}" />
+        <textarea name="comment-content" id="post-content">{{content}}</textarea>
+        <button type="submit" class="card-button">Update Post</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/comment.js"></script>

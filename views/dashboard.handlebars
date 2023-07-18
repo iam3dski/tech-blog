@@ -1,0 +1,30 @@
+<h1 id="dashboard-title">My Blog Posts</h1>
+
+{{#if posts}}
+  {{#each posts as |post|}}
+    {{> post-details}}
+  {{/each}}
+{{else}}
+  <div id="no-posts">
+    <p>Welcome to your dashboard. Create a blog post and have it show on the Home page along with blog posts from other users.</p>
+    <p>All of your blog posts will show on this page.</p>
+  </div>
+{{/if}}
+
+<div class="card">
+  <div class="card-header">
+    <h2>Create a New Post</h2>
+  </div>
+  <div class="card-content">
+    <form id="create-post-form">
+      <label for="post-title">Title:</label><br>
+      <input type="text" name="title" id="post-title" required><br>
+      <label for="post-content">Content:</label><br>
+      <textarea name="content" id="post-content" required></textarea><br>
+      <button type="submit" class="card-button mt">Create Post</button>
+    </form>
+  </div>
+</div>
+
+<script src="./assets/js/posts.js"></script>
+<script src="./assets/js/post.js"></script>

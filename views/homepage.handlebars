@@ -1,0 +1,11 @@
+{{#if posts}}
+  {{#each posts as |post|}}
+    {{> post-details}}
+  {{/each}}
+{{else}}
+  <div id="no-posts">
+    <p>I'm sorry, there are no blog posts available. Please check back later.</p>
+  </div>
+{{/if}}
+
+<script src="/assets/js/post.js"></script>

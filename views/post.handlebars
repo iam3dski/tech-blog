@@ -1,0 +1,44 @@
+{{> post-details}}
+{{#if logged_in}}
+  {{#if comments.length}}
+    <section>
+      <div class='card'>
+        <div class='card-header secondary'>
+          <h2>Comments</h2>
+        </div>
+        <div class='card-content'>
+          {{#each comments as |comment|}}
+            <div class='card comment'>
+              <div class='card-header dark'>
+                <h2>{{title}}</h2>
+                <div class='post-detail'>Posted by
+                  {{comment.user.name}}
+                  on
+                  {{format_date comment.date_created}}
+                </div>
+              </div>
+              <div class='card-content'>
+                {{comment.comment}}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+  {{/if}}
+  <section>
+    <div class='card'>
+      <div class='card-header'>
+        <h2>Add a Comment</h2>
+      </div>
+      <div class='card-content'>
+        <form class='comment-form'>
+          <textarea name='comment-content' id='comment-text'></textarea>
+          <button type='submit' class='card-button'>Add Comment</button>
+        </form>
+      </div>
+    </div>
+  </section>
+{{/if}}
+
+<script src='/assets/js/comment.js'></script>

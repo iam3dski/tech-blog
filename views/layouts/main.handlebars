@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Home</title>
+  </head>
+<body>
+  <div class="flex-column justify-space-around">
+    <!-- HEADER -->
+    <header>
+      <!-- NAVIGATION -->
+      <nav>
+        <span><a href="/">Home</a></span>
+        {{#if logged_in}}
+        <span><a href="/dashboard">Dashboard</a></span>
+        <span><a href="/logout">Log out</a></span>
+        {{else}}
+        <span><a href="/login">Log in</a></span>
+        <span><a href="/signup">Sign up</a></span>
+        {{/if}}
+      </nav>
+      <h1>The Tech Blog</h1>
+    </header>
+    <!-- MAIN -->
+    <main>
+      {{{ body }}} <!-- this is where the body of the page will be rendered -->
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2023 The Tech Blog</p>
+    </footer>
+  </body>
+</html>

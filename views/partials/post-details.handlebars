@@ -1,0 +1,28 @@
+<!-- CARD -->
+<!-- CARD -->
+<section>
+  <div class='card' data-id='{{id}}'>
+    <div class='card-header'>
+      <h2>{{title}}</h2>
+      <div class='post-detail'>Posted by
+        {{user.name}}
+        on
+        {{format_date date_created}}
+      </div>
+    </div>
+    <div class='card-content'>
+      <p>
+        {{content}}
+      </p>
+    </div>
+    {{#if logged_in}}
+      <div class='card-footer'>
+        <!-- Only show the edit/delete buttons if the author is viewing the post -->
+        {{#if belongs_to_user}}
+          <button class='edit-post card-button'>Edit</button>
+          <button class='delete-post card-button'>Delete</button>
+        {{/if}}
+      </div>
+    {{/if}}
+  </div>
+</section>
